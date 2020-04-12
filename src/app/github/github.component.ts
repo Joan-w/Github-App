@@ -11,18 +11,20 @@ export class GithubComponent implements OnInit {
   username:string;
   user:string[];
   repos:string[];
+  users:Users;
 
   constructor(private http:HttpClient){}
 
   ngOnInit() {
     
     interface ApiResponse{
+      username:string;
       user:string;
       repos:string;
     }
 
     this.http.get<ApiResponse>("https://api.github.com/users").subscribe(data=>{
-      this.user = new User(data.user, data.repos)
+      this.users = new Users(data.username, data.user, data.repos)
     })
   }
 
