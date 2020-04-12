@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class GithubService {
-  url:string ='https://api.github.com/users/'
+  url:string ='https://api.github.com/users'
 
   constructor(private http: HttpClient) { }
 
