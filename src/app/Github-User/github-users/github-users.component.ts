@@ -7,10 +7,13 @@ import { UserService } from "../../user.service";
   styleUrls: ['./github-users.component.css']
 })
 export class GithubUsersComponent implements OnInit {
+  
+  users;
 
   constructor(private userService: UserService) { }
 
   ngOnInit() {
+    this.users = this.userService.getUsers();
   }
 
 }
