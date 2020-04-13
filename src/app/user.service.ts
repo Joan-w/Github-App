@@ -10,4 +10,9 @@ export class UserService {
 
   //inject HttpClient as http
   constructor(private http: HttpClient) { }
+
+  //return what comes back from http call
+  getUsers(){
+    return this.http.get(`${this.apiUrl}?per_page=30`);
+  }
 }
