@@ -6,5 +6,12 @@ import { HttpClient } from "@angular/common/http";
 })
 export class UserService {
 
+  apiUrl = 'https://api.github.com/users';
+
   constructor(private http:HttpClient) { }
+
+  //return what comes back from http call
+  getUsers(){
+    return this.http.get(`${this.apiUrl}?per_page=30`);
+  }
 }
