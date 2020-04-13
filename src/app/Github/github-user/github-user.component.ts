@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Github } from "../../Classes/github";
 
 @Component({
   selector: 'app-github-user',
@@ -6,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./github-user.component.css']
 })
 export class GithubUserComponent implements OnInit {
+
+  username:string;
+  user:string[];
+  repo:string[];
 
   constructor() { }
 
