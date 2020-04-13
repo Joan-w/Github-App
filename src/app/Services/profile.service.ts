@@ -16,6 +16,18 @@ export class ProfileService {
   }
 
   getProfileInfo(){
-    return this.http.get("https://api.github.com/users/" + this.username + "?client_id=" + this.clientid + "&client_secret=" + this.clientsecret);
+    return this.http.get("https://api.github.com/users/" + 
+    this.username + "?client_id=" + this.clientid + "&client_secret=" 
+    + this.clientsecret);
+  }
+
+  getProfileRepos(){
+    return this.http.get("https://api.github.com/users/" + 
+    this.username + "/repos?client_id=" + this.clientid + "&client_secret=" 
+    + this.clientsecret);
+  }
+
+  updateProfile(username:string){
+    this.username = username;
   }
 }
