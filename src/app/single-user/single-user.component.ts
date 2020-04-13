@@ -11,6 +11,9 @@ export class SingleUserComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.route.params.subscribe(params => {
+      this.username = params['username'];
+    })
   }
 
 }
