@@ -15,8 +15,10 @@ export class SingleUserComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.subscribe(params => {
-      this.username = params['username'];
-    })
+      const username = params['username'];
+      this.userService.getUser(username).subscribe(user =>
+        this.user = user);
+    });
   }
 
 }
