@@ -4,11 +4,13 @@ import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserService } from './user.service';
+// import { UserService } from './user.service';
+import { GithubUsersComponent } from './github-users/github-users.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GithubUsersComponent
   ],
   imports: [
     BrowserModule,
@@ -16,7 +18,7 @@ import { UserService } from './user.service';
     HttpClientModule
   ],
   providers: [
-    UserService
+    // UserService
   ],
   bootstrap: [AppComponent]
 })
