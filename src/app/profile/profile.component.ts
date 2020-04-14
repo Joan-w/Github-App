@@ -17,12 +17,12 @@ export class ProfileComponent implements OnInit {
 
   findProfile(){
     this.profileService.updateProfile(this.username);
-    this.profileService.getProfileInfo().subscribe(profile =>{
+    this.profileService.getGithubUser().subscribe(profile =>{
       console.log(profile);
       this.profile = profile;
     });
 
-    this.profileService.getProfileRepos().subscribe(repos => {
+    this.profileService.getRepos().subscribe(repos => {
       console.log(repos);
       this.repos = repos;
     })
