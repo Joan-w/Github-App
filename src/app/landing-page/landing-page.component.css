@@ -4,3 +4,10 @@
     background-attachment: fixed;
     margin-top: 30vh;
 }
+
+h1{
+    font-family: monospace;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
