@@ -1,9 +1,15 @@
-.container{
+body{
+    background-image: url("../../assets/srch.jpg");
+    background-size: cover;
+    height: 680px;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    margin-top: 30vh;
+    overflow: hidden;
 }
+/* .container{ */
+    /* margin-top: 30vh; */
+/* } */
 
 h1{
     font-family: monospace;
