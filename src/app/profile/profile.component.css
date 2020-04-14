@@ -8,6 +8,7 @@ form{
     font-family: monospace;
     font-size: 80px;
     color: white;
+    text-align: center;
 }
 .jumbotron h3{
     font-family: serif;
@@ -31,4 +32,9 @@ form{
 .repos{
     text-align: center;
     font-family: sans-serif;
+}
+.jumbotron h1 i{
+    font-size:50px;
+    margin-left: 47%;
+    color: white;
 }
