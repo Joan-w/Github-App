@@ -13,7 +13,7 @@ Joan Kinyua
 
 
 ### Live view
-For a live view and interaction with the application, navigate to
+For a live view and interaction with the application, navigate to [Git-search](https://joan-w.github.io/Github-App/)
 
 # GithubApp
 
