@@ -1,8 +1,11 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <div class="container-fluid">
+    <br>
     <div class="jumbotron">
         <div class="row">
             <div class="col-md-12">
-                <h2>Welcome to Git-Search</h2>
+                <h2>Welcome to Git-Search <i class="fa fa-search" aria-hidden="true"></i></h2>
                 <h3> - {{username}} - </h3>
                 <form action="" class="search-form">
                     <div class="form-group">
@@ -10,6 +13,7 @@
                         [(ngModel)]="username" name="username" (keyup)="findProfile()">
                     </div>
                 </form>
+                <h1><i class="fa fa-github" aria-hidden="true"></i></h1>
             </div>
         </div>
     </div>
