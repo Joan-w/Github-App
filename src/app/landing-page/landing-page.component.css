@@ -18,3 +18,20 @@ p{
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
+
+button{
+    border-radius: 10px;
+    background-color: rgb(61, 3, 61);
+    margin-left: 41%;
+    height: 40px;
+}
+button a{
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: 600;
+    text-decoration: none;
+}
+button a:hover{
+    color:crimson;
+}
