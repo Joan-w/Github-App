@@ -16,3 +16,6 @@ form{
     text-align: center;
     font-weight: 700;
 }
+.list-group li{
+    margin-left: -20px;
+}
