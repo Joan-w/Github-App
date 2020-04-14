@@ -7,11 +7,17 @@ body{
     background-attachment: fixed;
     overflow: hidden;
 }
-/* .container{ */
-    /* margin-top: 30vh; */
-/* } */
+.intro{
+    padding-top: 30vh;
+    background-color: black;
+    opacity: .8;
+    width: 50%;
+    height: 680px;
+    margin-left: 25%;
+}
 
 h1{
+    color: white;
     font-family: monospace;
     font-size: 50px;
     text-align: center;
@@ -19,6 +25,7 @@ h1{
 }
 
 p{
+    color: white;
     font-size: 30px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
@@ -28,7 +35,7 @@ p{
 button{
     border-radius: 10px;
     background-color: rgb(61, 3, 61);
-    margin-left: 41%;
+    margin-left: 35%;
     height: 40px;
 }
 button a{
