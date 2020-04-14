@@ -28,3 +28,7 @@ form{
     text-decoration: underline;
     text-decoration-color: black;
 }
+.repos{
+    text-align: center;
+    font-family: sans-serif;
+}
