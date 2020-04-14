@@ -68,18 +68,50 @@
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-title">
-                        <h3>Repos</h3>                        
-                    </div>
-                    <div class="card-body" *ngFor="let repo of repos">
-                        <h5>{{repo.name}}</h5>
-                        <p>{{repo.description}}</p>
-                        <a href="{{repo.html_url}}" class="btn btn-sm btn-info">
-                            View me
-                        </a>
+        <div *ngIf="profile">
+            <div class="card">
+                <div class="card-title">
+                    {{profile.name}} <small>({{profile.login}})</small>
+                    <span *ngIf="profile.company">, Works at {{profile.company}}</span>
+                    {{profile.location}}
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="{{profile.avatar_url}}" class="img-fluid img-responsive" alt="Avatar-img">
+                        </div>
+                        <div class="col-md-5">
+                            <ul class="list-group">
+                                <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
+                                <li class="list-group-item" *ngIf="profile.hireable">Available for hire</li>
+                                <li class="list-group-item" *ngIf="profile.blog">{{profile.blog}}</li>
+                                <li class="list-group-item" *ngIf="profile.email"><a href="{{profile.email}}" target="_blank">{{profile.email}}</a></li>
+                            </ul>
+
+                            <div>
+                                <p>Followers<span class="badge">{{profile.followers}}</span></p><br>
+                                <p>Following:<span class="badge">{{profile.following}}</span></p><br>
+                                <p>Public gists<span class="badge">{{profile.public_gists}}</span></p><br>
+                                <p>Repositories<span class="badge">{{profile.public_repos}}</span></p><br>
+                            </div>
+                            <p><a href="{{profile.html_url}}" target="_blank" class="btn btn-success btn-sm">View profile</a></p>
+                            
+                        </div>
+                        <div class="col-md-4">
+                            <div>                                
+                                <div class="card">
+                                    <div class="card-title">
+                                        <h3 class="card-title">Repositories</h3>
+                                    </div>
+                                    <div class="card-body" *ngFor="let repo of repos">
+                                        <h4>{{repo.name}}</h4>
+                                        <p>{{repo.description}}</p>
+                                        <a href="{{repo.html_url}}" class="btn btn-sm btn-info pull-right">
+                                        View me on github </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
