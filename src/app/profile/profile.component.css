@@ -19,3 +19,12 @@ form{
 .list-group li{
     margin-left: -20px;
 }
+.repo-title{
+    text-align: center;
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: 600;
+    color:crimson;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
