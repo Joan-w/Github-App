@@ -1,16 +1,17 @@
-#PROJECT NAME
+# PROJECT NAME
 GithubApp
 
-##Author
+## Author
 Joan Kinyua
 
-##Technologies Used
+## Technologies Used
 * Angular
 * Bootstrap
 
-###App screenshot
+### App screenshot
+![Screenshot of app](src/app/assets/app-screenshot.jpg)
 
-###Live view
+### Live view
 For a live view and interaction with the application, navigate to
 
 # GithubApp
@@ -41,7 +42,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-###License
+### License
 MIT license
 
 Copyright (c) Joan Kinyua @2020
