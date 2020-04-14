@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { GithubUsersComponent } from "./Github-User/github-users/github-users.component";
-import { SingleUserComponent } from "./single-user/single-user.component";
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 const routes: Routes = [
-  { path: '', component: GithubUsersComponent },
-  { path: ':username', component: SingleUserComponent }
+  { path: '', component: LandingPageComponent },
+  { path: 'profile', component: ProfileComponent },
 ];
 
 @NgModule({
