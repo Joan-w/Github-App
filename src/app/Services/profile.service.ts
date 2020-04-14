@@ -15,13 +15,13 @@ export class ProfileService {
     this.username = 'Joan-w';
   }
 
-  getProfileInfo(){
+  getGithubUser(){
     return this.http.get("https://api.github.com/users/" + 
     this.username + "?client_id=" + this.clientid + "&client_secret=" 
     + this.clientsecret);
   }
 
-  getProfileRepos(){
+  getRepos(){
     return this.http.get("https://api.github.com/users/" + 
     this.username + "/repos?client_id=" + this.clientid + "&client_secret=" 
     + this.clientsecret);
