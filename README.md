@@ -9,7 +9,7 @@ Joan Kinyua
 * Bootstrap
 
 ### App screenshot
-images.githubusercontent.com/58691817/79210683-e0f5ad00-7e4d-11ea-9601-c729c6906121.png)
+![Screenshot of app](src/app/assets/app-screenshot.jpg)
 
 ### Live view
 For a live view and interaction with the application, navigate to
